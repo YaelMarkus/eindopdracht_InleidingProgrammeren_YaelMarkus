@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+    color: whitesmoke;
+}
+
+#drums{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.key{
+    border: solid whitesmoke;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.1 ease;
+}
+
+.key.active{
+    transform: scale(1.2);
+    border-color: rgb(224, 39, 224);
+}
+
+.key:active, .key:focus{
+    outline: none;
+    transform: scale(0.95);
+}
