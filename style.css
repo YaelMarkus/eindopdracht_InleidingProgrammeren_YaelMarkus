@@ -10,7 +10,11 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: black;
+    background-image: url(images/drums.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
     color: whitesmoke;
 }
 
